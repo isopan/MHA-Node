@@ -21,8 +21,9 @@ use strict;
 use warnings FATAL => 'all';
 
 package MHA::NodeConst;
+use MHA::Node;
 
-our $VERSION         = '0.56';
+our $VERSION         = $MHA::Node::VERSION;
 our $MGR_MIN_VERSION = '0.54';
 our $SSH_OPT_ALIVE =
 "-o ServerAliveInterval=60 -o ServerAliveCountMax=20 -o StrictHostKeyChecking=no -o ConnectionAttempts=5 -o PasswordAuthentication=no -o BatchMode=yes";
